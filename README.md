@@ -12,7 +12,7 @@
 ----
 
 ```javascript
-const JPost = require("./jp");
+const JPost = require("jp-post-api");
 var api = new JPost("1xxxxxxxxxxx");
 (async () => {
     try {
