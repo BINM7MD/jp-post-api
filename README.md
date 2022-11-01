@@ -34,4 +34,4 @@ console.log(`Date ${Package[0]} : Shipping Tracking Record ${Package[1]} Office 
 ### Installation
                 
 ----
-`npm install jp-post`
+`npm install jp-post-api`
