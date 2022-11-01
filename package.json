@@ -1,0 +1,24 @@
+{
+  "name": "jp-post-api",
+  "version": "1.0.1",
+  "description": "JP Post Unoffical API",
+  "main": "jp.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BINM7MD/jp-post-api"
+  },
+  "author": {
+    "name": "Ali Bin Mohammad"
+  },
+  "readme": "# JP Post Unoffical API![](https://www.post.japanpost.jp/assets/img/common/img_siteid-bg_en.png)### Introduction                ----```javascriptconst JPost = require(\"./jp\");var api = new JPost(\"1xxxxxxxxxxx\");(async () => {    try {     var Tracking = await api.getTracking();     console.log(Tracking);    } catch (err) {      console.error(err);    } })();```### Data Filtering                 ----```javascriptvar Tracking = await api.getTracking();var Package = Tracking[0].split(\"|\");console.log(`Date ${Package[0]} : Shipping Tracking Record ${Package[1]} Office : ${Package[2]}`);```### Installation                ----`npm install jp-post`",
+  "readmeFilename": "README.md",
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "jssoup": "^0.0.15",
+    "superagent": "^8.0.3"
+  }
+}
